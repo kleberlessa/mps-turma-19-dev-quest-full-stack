@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</Select>t</title>
+</head>
+<body>
+    <h1>Select</h1>
+
+    <form action="">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+    </form>
+
+    <!-- 
+    O atributo `selected` é utilizado em elementos `<option>` dentro de um `<select>`. 
+    Este atributo indica que a opção específica deve ser selecionada por padrão quando a página é carregada. 
+    Isso é útil para definir um valor padrão ou sugerido para o usuário em menus suspensos (dropdowns). 
+    Apenas uma opção pode ter o atributo `selected` dentro de um `<select>`, pois apenas uma opção pode ser selecionada por vez.
+    -->
+
+    <!-- 
+    O atributo `multiple` é utilizado dentro do elemento `<select>` para permitir que o usuário selecione mais de uma opção de um menu suspenso (dropdown). 
+    Quando o atributo `multiple` está presente, o menu suspenso se comporta como uma lista de seleção múltipla, permitindo que várias opções sejam selecionadas ao mesmo tempo. 
+    Isso é útil em situações onde o usuário precisa escolher múltiplas opções de uma lista.
+    -->
+</body>
+</html>
