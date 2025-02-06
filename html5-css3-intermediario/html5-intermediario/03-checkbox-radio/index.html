@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox | Radio</title>
+</head>
+<body>
+    <h1>Checkbox | Radio</h1>
+
+    <!-- 
+    O atributo `checked` é utilizado em elementos de formulário, como caixas de seleção (`<input type="checkbox">`) e botões de rádio (`<input type="radio">`). 
+    Quando presente, ele indica que a caixa de seleção ou o botão de rádio deve estar marcado (selecionado) por padrão quando a página é carregada. 
+    Isso é útil para definir opções padrão em formulários, melhorando a experiência do usuário ao pré-selecionar opções comuns ou recomendadas.
+    -->
+
+    <form action="">
+        <fieldset>
+            <legend>Web Development</legend>
+            <input type="checkbox" name="checkbox" id="checkbox1" value="1" checked>
+            <label for="checkbox1">Codar</label>
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox2" value="2">
+            <label for="checkbox2">Testar</label>
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox3" value="3">
+            <label for="checkbox3">Publicar</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Design</legend>
+            <input type="radio" name="radio" id="radio1" value="1" checked>
+            <label for="radio1">Web</label>
+            <br>
+            <input type="radio" name="radio" id="radio2" value="2">
+            <label for="radio2">Character</label>
+            <br>
+            <input type="radio" name="radio" id="radio3" value="3">
+            <label for="radio3">Animation</label>
+        </fieldset>
+</body>
+</html>
