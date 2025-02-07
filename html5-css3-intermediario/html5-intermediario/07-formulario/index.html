@@ -23,13 +23,40 @@
     <br>
 
     <h3>Formulário de login no Facebook</h3>
-    <form method="get" action="index.html">
+    <form method="get" action="index.html" enctype="multipart/form-data">
         <input type="text" name="nome" placeholder="nome">
         <input type="text" name="sobrenome" placeholder="sobrenome"><br>
         <input type="text" name="email_or_phone" placeholder="E-mail ou celular">
         <input type="password" name="senha" placeholder="Senha"><br>
         
-        <br>    
+        <br>
+        <br>
+        
+         <!-- 
+    Este trecho de código cria um formulário HTML para coletar informações de login e dados pessoais. 
+    O formulário inclui campos para nome, sobrenome, e-mail ou telefone, senha e data de nascimento, além de opções de gênero.
+
+    O elemento <form> possui os seguintes atributos:
+    - method="get": Define que os dados do formulário serão enviados usando o método HTTP GET.
+    - action="index.html": Especifica a URL para a qual os dados do formulário serão enviados.
+    - enctype="multipart/form-data": Embora geralmente usado para upload de arquivos, não é necessário neste contexto.
+
+    Dentro do formulário, temos:
+    - <input type="text" name="nome" placeholder="nome">: Campo de entrada de texto para o nome.
+    - <input type="text" name="sobrenome" placeholder="sobrenome">: Campo de entrada de texto para o sobrenome.
+    - <input type="text" name="email_or_phone" placeholder="E-mail ou celular">: Campo de entrada de texto para e-mail ou telefone.
+    - <input type="password" name="senha" placeholder="Senha">: Campo de entrada de senha.
+    - <label for="data">Data de nascimento</label>: Rótulo para os campos de seleção de data de nascimento.
+    - <select name="dia">, <select name="mês">, <select name="ano">: Menus suspensos para selecionar dia, mês e ano de nascimento.
+    - <label>Gênero</label>: Rótulo para os botões de rádio de gênero.
+    - <input type="radio" name="genero" id="masculino">: Botão de rádio para selecionar "Masculino".
+    - <input type="radio" name="genero" id="feminino">: Botão de rádio para selecionar "Feminino".
+    - <input type="radio" name="genero" id="outro">: Botão de rádio para selecionar "Outro".
+    - <input type="submit" value="Entrar">: Botão de envio que, quando clicado, envia o formulário para a URL especificada no atributo action.
+    - <a href="#">Criar nova conta</a>: Link para criar uma nova conta.
+
+    Este formulário permite ao usuário inserir suas informações pessoais e de login, e enviá-las para processamento.
+    -->
 
         <label for="data">Data de nascimento</label><br>
         <select name="dia">
@@ -68,16 +95,45 @@
         <input type="radio" name="genero" id="feminino">
 
         <label for="outro">Outro</label>
-        <input type="radio" name="genero" id="outro">
+        <input type="radio" name="genero" id="outro">             
+        
         
         <br>
         <br>
 
         <input type="submit" value="Entrar">
+
+        <br>
+        <br>
+
+        <a href="#">Criar nova conta</a>
     </form>
 
+   
 
+    <h3>Formulário de upload de arquivo</h3>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="fileUpload">Escolha um arquivo:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <input type="submit" value="Enviar">
+    </form>
 
+    <!-- 
+Este trecho de código cria um formulário HTML para upload de arquivos. 
+O formulário permite ao usuário selecionar um arquivo de seu sistema local e enviá-lo para o servidor para processamento.
+
+O elemento <form> possui os seguintes atributos:
+- action="/upload": Especifica a URL para a qual os dados do formulário serão enviados.
+- method="post": Define que os dados do formulário serão enviados usando o método HTTP POST.
+- enctype="multipart/form-data": Necessário para permitir o upload de arquivos, especificando que os dados do formulário serão codificados como multipart/form-data.
+
+Dentro do formulário, temos:
+- <label for="fileUpload">Escolha um arquivo:</label>: Um rótulo associado ao campo de entrada de arquivo.
+- <input type="file" id="fileUpload" name="fileUpload">: Um campo de entrada que permite ao usuário selecionar um arquivo de seu sistema local.
+- <input type="submit" value="Enviar">: Um botão de envio que, quando clicado, envia o formulário para a URL especificada no atributo action.
+
+Este formulário permite ao usuário selecionar um arquivo e enviá-lo ao servidor para processamento.
+-->
         
 </body>
 </html>
