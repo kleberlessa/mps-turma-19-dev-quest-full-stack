@@ -32,6 +32,18 @@
     </header>
 
     <main>
+
+        <section>
+
+            <h2>Apresentação</h2>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+                <figcaption>Legenda da imagem</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.</p>
+
+        </section>
+
         <article>
             <h2>Artigo 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.</p>
@@ -39,7 +51,7 @@
             <footer>
                 <p>Publicado em 7 de Fevereiro de 2025</p>
                 <p>Autor: João Silva</p>
-              </footer>
+            </footer>
 
         </article>
 
@@ -50,15 +62,54 @@
             <footer>
                 <p>Publicado em 7 de Fevereiro de 2025</p>
                 <p>Autor: João Silva</p>
-              </footer>
+            </footer>
 
-        </article>        
+        </article>
+        
+        <aside>
+            <h3>Artigos relacionados</h3>
+            <ul>
+                <li><a href="#">Artigo 3</a></li>
+                <li><a href="#">Artigo 4</a></li>
+                <li><a href="#">Artigo 5</a></li>
+            </ul>
+        </aside>
+
     </main>
 
     <footer class="footer">
-        <p>Desenvolvido por <a href="#">Nome do desenvolvedor</a></p>
-        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+        
+        <section aria-labelledby="contact-info">
+            <h2 id="contact-info">Contato</h2>
+            <address>
+                Email: <a href="mailto:email@example.com">email@example.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/">linkedin.com</a><br>
+                GitHub: <a href="https://www.github.com/">github.com</a><br>
+                Fone: <a href="tel:+1234567890">(123) 456-7890</a><br>
+                Endereço: 123 Rua Principal, Cidade, Estado, CEP 12345-678<br>
+                <p>Desenvolvido por <a href="#">Nome do desenvolvedor</a></p>
+                <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+            </address>
+        </section>
+
     </footer>
+    
+    <!-- 
+    Este rodapé HTML contém uma seção de informações de contato e créditos.
+
+    - <footer class="footer">: Define o rodapé da página. A classe "footer" pode ser usada para aplicar estilos CSS específicos ao rodapé.
+    - <section aria-labelledby="contact-info">: Agrupa o conteúdo relacionado às informações de contato. O atributo `aria-labelledby` melhora a acessibilidade ao associar a seção ao cabeçalho com o `id="contact-info"`.
+    - <h2 id="contact-info">Contato</h2>: Define um cabeçalho de nível 2 para a seção de contato.
+    - <address>: Fornece informações de contato. Inclui:
+      - Email: Um link `mailto:` que abre o cliente de email padrão do usuário.
+      - LinkedIn e GitHub: Links `https://` para os perfis de LinkedIn e GitHub.
+      - Telefone: Um link `tel:` que inicia uma chamada telefônica no dispositivo do usuário.
+      - Endereço: Um endereço físico fornecido como texto simples.
+    - <p>Desenvolvido por <a href="#">Nome do desenvolvedor</a></p>: Um parágrafo que fornece créditos ao desenvolvedor do site.
+    - <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>: Um parágrafo que contém uma mensagem de direitos autorais.
+
+    O uso dessas tags semânticas e atributos de acessibilidade melhora a estrutura do documento, facilitando a navegação e a compreensão do conteúdo tanto para os usuários quanto para as tecnologias assistivas.
+    -->
     
 </body>
 </html>
