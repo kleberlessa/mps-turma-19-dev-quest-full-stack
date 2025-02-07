@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <h3>Formulário com get</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Pesquisar"> 
+        <br>
+    </form>
+    
+    <h3>Formulário com post</h3>
+    <form method="post" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Pesquisar"> 
+    </form>
+    <br>
+
+    <h3>Formulário de login no Facebook</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="nome" placeholder="nome">
+        <input type="text" name="sobrenome" placeholder="sobrenome"><br>
+        <input type="text" name="email_or_phone" placeholder="E-mail ou celular">
+        <input type="password" name="senha" placeholder="Senha"><br>
+        
+        <br>    
+
+        <label for="data">Data de nascimento</label><br>
+        <select name="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="mês">
+            <option value="jan">Jan</option>
+            <option value="fev">Fev</option>
+            <option value="mar">Mar</option>
+            <option value="abr">Abr</option>
+            <option value="mai">Mai</option>
+        </select>
+
+        <select name="ano">
+            <option value="1970">1970</option>
+            <option value="1971">1971</option>
+            <option value="1972">1972</option>
+            <option value="1973">1973</option>
+            <option value="1974">1974</option>      
+                
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Gênero</label><br>
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino">
+
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino">
+
+        <label for="outro">Outro</label>
+        <input type="radio" name="genero" id="outro">
+        
+        <br>
+        <br>
+
+        <input type="submit" value="Entrar">
+    </form>
+
+
+
+        
+</body>
+</html>
