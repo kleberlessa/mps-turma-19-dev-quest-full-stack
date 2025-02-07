@@ -24,7 +24,7 @@
 
     <h3>Formulário de login no Facebook</h3>
     <form method="get" action="index.html" enctype="multipart/form-data">
-        <input type="text" name="nome" placeholder="nome">
+        <input type="text" name="nome" placeholder="nome" required>
         <input type="text" name="sobrenome" placeholder="sobrenome"><br>
         <input type="text" name="email_or_phone" placeholder="E-mail ou celular">
         <input type="password" name="senha" placeholder="Senha"><br>
@@ -42,7 +42,7 @@
     - enctype="multipart/form-data": Embora geralmente usado para upload de arquivos, não é necessário neste contexto.
 
     Dentro do formulário, temos:
-    - <input type="text" name="nome" placeholder="nome">: Campo de entrada de texto para o nome.
+    - <input type="text" name="nome" placeholder="nome" required>: Campo de entrada de texto para o nome. O atributo `required` indica que este campo é obrigatório e deve ser preenchido antes que o formulário possa ser enviado.
     - <input type="text" name="sobrenome" placeholder="sobrenome">: Campo de entrada de texto para o sobrenome.
     - <input type="text" name="email_or_phone" placeholder="E-mail ou celular">: Campo de entrada de texto para e-mail ou telefone.
     - <input type="password" name="senha" placeholder="Senha">: Campo de entrada de senha.
